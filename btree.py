@@ -92,21 +92,22 @@ def visualize_binary_tree(root, counter):
             add_nodes_edges(node.right)
 
     add_nodes_edges(root)
-    dot.render('bt_'+str(counter), view=True, format='png')
+    #dot.render('bt_'+str(counter), view=True, format='png')
+    dot.render('bt_'+str(counter), view=False, format='png')    
 
 
 if __name__ == "__main__":
 
     keys = [
         [None],
-        [5],
-        [5, 3],
-        [5, 3, 7],
-        [5, 3, 7, 9],
+        # [5],
+        # [5, 3],
+        # [5, 3, 7],
+        # [5, 3, 7, 9],
         [5, 3, 7, 9, 8],        
         [5, 3, 7, 8, 9],
-        [5, 3, 7, 2, 4, 6],
-        [5, 3, 7, 2, 4, 6, 8]
+        # [5, 3, 7, 2, 4, 6],
+        # [5, 3, 7, 2, 4, 6, 8]
     ]
 
     figcounter = 0
