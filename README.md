@@ -19,5 +19,5 @@ Como en [**link**](https://levelup.gitconnected.com/binary-tree-implementation-a
 
 ## make n venv (-)
 
-  - [ ] try [https://pypi.org/project/Makefile.venv/](url)
-  - [ ] read [https://earthly.dev/blog/python-makefile/](url)
+  - [ ] https://pypi.org/project/Makefile.venv/ 
+  - [ ] https://earthly.dev/blog/python-makefile/
