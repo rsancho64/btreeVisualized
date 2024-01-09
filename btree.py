@@ -49,13 +49,6 @@ def get_min_value(root):
     return root
 
 
-class TreeNode:
-    def __init__(self, key):
-        self.key = key
-        self.left = None
-        self.right = None
-
-
 def in_order_traversal(root):
     if root is not None:
         in_order_traversal(root.left)
