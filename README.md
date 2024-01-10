@@ -10,7 +10,7 @@ Como en [**link**](https://levelup.gitconnected.com/binary-tree-implementation-a
 
 ## ejercicio:
 
-  usar py/random para generar valores para ir insertando valores nuevos, aleatoriamente en un árbol
+  usar `py/random` para generar valores nuevos -un flujo- a ir insertando, aleatoriamente, en un árbol binario
 
 ## venv (-)
 

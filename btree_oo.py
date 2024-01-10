@@ -98,7 +98,7 @@ class Bt:
         self.left = self.right = None
 
     def __str__(self):
-        # return f"[{self.key},{self.left},{self.right}]"
+        # return f"[{self.left},{self.key},{self.right}]"
         keyOut = self.key
         if not keyOut:
             keyOut = "·"
@@ -108,18 +108,7 @@ class Bt:
         rightOut = self.right
         if not self.right:
             rightOut = "-"
-        return f"[{leftOut},{keyOut},{rightOut}]"
-
-    # LEGACY
-    # def insert(root, key):
-    #     if root is None:
-    #         return TreeNode(key)
-    #     else:
-    #         if key < root.key:
-    #             root.left = insert(root.left, key)
-    #         else:
-    #             root.right = insert(root.right, key)
-    #     return root
+        return f"({leftOut} {keyOut} {rightOut})"
 
     def insert(self, key):
 
@@ -143,25 +132,7 @@ class Bt:
                 self.right.insert(key)
                 return
 
-    # LEGACY
-    # def visualize_binary_tree(root, counter):
-    #     dot = graphviz.Digraph()
-    #     dot.node(str(root.key))
-
-    #     def add_nodes_edges(node):
-    #         if node.left:
-    #             dot.node(str(node.left.key))
-    #             dot.edge(str(node.key), str(node.left.key))
-    #             add_nodes_edges(node.left)
-    #         if node.right:
-    #             dot.node(str(node.right.key))
-    #             dot.edge(str(node.key), str(node.right.key))
-    #             add_nodes_edges(node.right)
-
-    #     add_nodes_edges(root)
-    #     # dot.render('bt_'+str(counter), view=True, format='png')
-    #     dot.render('bt_'+str(counter), view=False, format='png')
-
+ 
     def visu(self):
 
         # - [??] TODO introspeccion del nombre
@@ -193,22 +164,22 @@ if __name__ == "__main__":
     print(bt)
     bt.visu()
 
-    # bt.insert(22)
-    # print(bt)
-    # # bt.visu()
+    bt.insert(11)
+    print(bt)
+    bt.visu()
 
-    # bt.insert(11)
-    # print(bt)
-    # bt.visu()
+    bt.insert(22)
+    print(bt)
+    bt.visu()
 
-    # bt.insert(33)  
-    # print(bt)
-    # bt.visu()
+    bt.insert(10)  
+    print(bt)
+    bt.visu()
 
-    # bt.insert(23)  
-    # print(bt)
-    # bt.visu()
+    bt.insert(23)  
+    print(bt)
+    bt.visu()
 
-    # bt.insert(44)  
-    # print(bt)
-    # bt.visu()
+    bt.insert(44)  
+    print(bt)
+    bt.visu()
