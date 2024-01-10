@@ -191,24 +191,24 @@ if __name__ == "__main__":
 
     bt = Bt()
     print(bt)
+    bt.visu()
+
+    # bt.insert(22)
+    # print(bt)
+    # # bt.visu()
+
+    # bt.insert(11)
+    # print(bt)
     # bt.visu()
 
-    bt.insert(22)
-    print(bt)
+    # bt.insert(33)  
+    # print(bt)
     # bt.visu()
 
-    bt.insert(11)
-    print(bt)
-    bt.visu()
+    # bt.insert(23)  
+    # print(bt)
+    # bt.visu()
 
-    bt.insert(33)  
-    print(bt)
-    bt.visu()
-
-    bt.insert(23)  
-    print(bt)
-    bt.visu()
-
-    bt.insert(44)  
-    print(bt)
-    bt.visu()
+    # bt.insert(44)  
+    # print(bt)
+    # bt.visu()
